@@ -98,7 +98,6 @@ void desenhaChao()
 }
 
 
-// draw.cpp
 
 void desenhaTorresELosangos(void)
 {
@@ -132,9 +131,9 @@ void desenhaTorresELosangos(void)
         glPushMatrix();
         glTranslatef(x, 0.0f, z);
 
-        // ----------------------------------------------------
+        
         // 1. Torre (Cubo Texturizado - Fixed Function)
-        // ----------------------------------------------------
+        
         glPushMatrix();
         glEnable(GL_LIGHTING); 
         
@@ -183,8 +182,6 @@ void desenhaTorresELosangos(void)
 
         glEnd();
         
-        // === REMOVE A EMISSÃO APÓS DESENHAR O CUBO ===
-        // Zera o componente de emissão para que o próximo objeto (Losango) não brilhe
         float corZero[4] = {0.0f, 0.0f, 0.0f, 1.0f};
         glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, corZero); 
         
@@ -224,7 +221,7 @@ void desenhaTorresELosangos(void)
         desenhaLosango(1.5f); // Chama a função que define a geometria
         glPopMatrix();
 
-        glUseProgram(0); // Desativa o shader
+        glUseProgram(0); 
         
         glPopMatrix();
     }
@@ -286,7 +283,7 @@ void desenhaPiramideDegraus()
 
     glUseProgram(0);
 
-    // vamos usar um cubo unitário de -0.5 a 0.5
+    
     float half = 0.5f;
 
     // Degrau 1

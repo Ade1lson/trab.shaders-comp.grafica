@@ -1,4 +1,4 @@
-// shaders/losango.frag
+
 #version 120
 
 // Uniforms (Parâmetros enviados do C++)
@@ -12,7 +12,7 @@ uniform float uOffset;
 varying vec3 vPosition; 
 
 void main() {
-    // 1. Definições e Coordenadas
+   
     // Normaliza vPosition para o tamanho do losango (1.5f), usando Y e X
     vec2 position_uv = vPosition.yx / 0.75; 
     
@@ -34,7 +34,6 @@ void main() {
     // 4. Intensidade da Linha (Suavização)
     float line_intensity = smoothstep(uLineWidth, 0.0, dist);
     
-    // 5. Cor Final
     
     // --- Gradiente de Cores no Fundo ---
     

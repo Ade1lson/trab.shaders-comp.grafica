@@ -42,7 +42,7 @@ void main() {
     
     // Cores de Base
     vec3 color_blue = vec3(0.0, 0.15, 0.3);       // Azul escuro (topo)
-    // R: 0.5 (forte), G: 0.0 (nulo), B: 0.35 (suficiente para roxo)
+   
     vec3 color_maroon = vec3(0.5, 0.0, 0.35); // Mais Vermelho/Magenta (base)
     
     // Mistura as duas cores base: Magenta na base, Azul no topo

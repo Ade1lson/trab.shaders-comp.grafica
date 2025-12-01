@@ -128,7 +128,7 @@ int main(int argc, char **argv)
     // cria o shader
     progEsfera = criaShader("shaders/blood.vert", "shaders/blood.frag");
     progLava = criaShader("shaders/lava.vert", "shaders/lava.frag");
-    progLosango = criaShader("shaders/losango.vert", "shaders/losango.frag"); // NOVO: Carrega o shader dos losangos
+    progLosango = criaShader("shaders/losango.vert", "shaders/losango.frag");
 
     glClearColor(0.05f, 0.05f, 0.1f, 1.0f);
 
